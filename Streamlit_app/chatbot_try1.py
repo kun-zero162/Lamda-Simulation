@@ -15,7 +15,7 @@ import warnings
 
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
  
-tokenizer = pickle.load(open("tokenizer.pkl",'rb'))
+tokenizer = pickle.load(open("Streamlit_app/tokenizer.pkl",'rb'))
 
 def get_model():
     
