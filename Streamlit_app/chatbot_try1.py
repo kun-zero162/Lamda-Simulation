@@ -35,7 +35,7 @@ def get_model():
     num_heads=NUM_HEADS,
     dropout=DROPOUT)
     
-    model.load_weights("checkpoints/my_checkpoint")
+    #model.load_weights("Streamlit_app/checkpoints/git")
         
     
     return model
