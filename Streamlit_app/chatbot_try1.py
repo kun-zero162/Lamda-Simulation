@@ -22,7 +22,7 @@ def get_model():
     NUM_LAYERS = 2
     D_MODEL = 256
     NUM_HEADS = 8
-    UNITS = 512
+    UNITS = 128
     DROPOUT = 0.1
     # Vocabulary size plus start and end token
     VOCAB_SIZE = tokenizer.vocab_size + 2
@@ -35,7 +35,7 @@ def get_model():
     num_heads=NUM_HEADS,
     dropout=DROPOUT)
     
-    #model.load_weights("Streamlit_app/checkpoints/git")
+    model.load_weights("Streamlit_app/checkpoints/my_checkpoint")
         
     
     return model
@@ -96,4 +96,5 @@ user_input = st.text_input('Input')
 if st.button('Send'):
     output = function1(str(user_input))
     st.write(output)
+    
 

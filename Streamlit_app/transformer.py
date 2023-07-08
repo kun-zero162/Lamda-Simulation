@@ -16,7 +16,7 @@ from  tensorflow.keras.layers import Embedding, Dense, BatchNormalization
 
 
 ###################################################################################
-#tokenizer = pickle.load(open("tokenizer.pkl",'rb'))
+tokenizer = pickle.load(open("Streamlit_app/tokenizer.pkl",'rb'))
 
 def get_angles(pos, i, d_model):
   angle_rates = 1 / np.power(10000, (2 * (i//2)) / np.float32(d_model))
